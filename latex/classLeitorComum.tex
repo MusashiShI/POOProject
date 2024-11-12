@@ -1,0 +1,139 @@
+\doxysection{Leitor\+Comum Class Reference}
+\hypertarget{classLeitorComum}{}\label{classLeitorComum}\index{LeitorComum@{LeitorComum}}
+
+
+Representa um leitor comum.  
+
+
+
+
+{\ttfamily \#include $<$Leitor\+Comum.\+h$>$}
+
+
+
+Inheritance diagram for Leitor\+Comum\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classLeitorComum__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Leitor\+Comum\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classLeitorComum__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLeitorComum_a8b896b3f06d8496f707fe9484905864e}{Leitor\+Comum}} (const std\+::string \&\mbox{\hyperlink{classLeitor_ad6ef20420fd6ca11394bbbbe61cc8421}{nome}}, int \mbox{\hyperlink{classLeitor_a615f61cf3326cfe93442d8db41a1aad3}{idade}})
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{classLeitorComum}{Leitor\+Comum}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLeitorComum_a959fc98d2b947a9c1bd4393014c1d07c}{exibir\+Informacoes}} () const override
+\begin{DoxyCompactList}\small\item\em Exibe informações do leitor comum. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLeitorComum_a6e7b47c94259ef386394240810394aa2}{calcular\+Multa}} (int dias\+Atraso) const override
+\begin{DoxyCompactList}\small\item\em Calcula a multa para o leitor comum. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLeitorComum_add662e9d2c7cccc88fe42f6618af05f5}{get\+Prazo\+Emprestimo}} () const override
+\begin{DoxyCompactList}\small\item\em Retorna o prazo máximo de empréstimo para o leitor comum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classLeitor}{Leitor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLeitor_a4e7ee173bce2e57c1d4fdc1678afe924}{Leitor}} (const std\+::string \&\mbox{\hyperlink{classLeitor_ad6ef20420fd6ca11394bbbbe61cc8421}{nome}}, int \mbox{\hyperlink{classLeitor_a615f61cf3326cfe93442d8db41a1aad3}{idade}})
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{classLeitor}{Leitor}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classLeitor}{Leitor}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classLeitor_ad6ef20420fd6ca11394bbbbe61cc8421}{nome}}
+\item 
+int \mbox{\hyperlink{classLeitor_a615f61cf3326cfe93442d8db41a1aad3}{idade}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa um leitor comum. 
+
+A classe {\ttfamily \doxylink{classLeitorComum}{Leitor\+Comum}} é uma subclasse de {\ttfamily \doxylink{classLeitor}{Leitor}}, com prazos e cálculo de multas específicos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classLeitorComum_a8b896b3f06d8496f707fe9484905864e}\label{classLeitorComum_a8b896b3f06d8496f707fe9484905864e} 
+\index{LeitorComum@{LeitorComum}!LeitorComum@{LeitorComum}}
+\index{LeitorComum@{LeitorComum}!LeitorComum@{LeitorComum}}
+\doxysubsubsection{\texorpdfstring{LeitorComum()}{LeitorComum()}}
+{\footnotesize\ttfamily Leitor\+Comum\+::\+Leitor\+Comum (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{int}]{idade }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \doxylink{classLeitorComum}{Leitor\+Comum}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome do leitor. \\
+\hline
+{\em idade} & Idade do leitor. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLeitorComum_a6e7b47c94259ef386394240810394aa2}\label{classLeitorComum_a6e7b47c94259ef386394240810394aa2} 
+\index{LeitorComum@{LeitorComum}!calcularMulta@{calcularMulta}}
+\index{calcularMulta@{calcularMulta}!LeitorComum@{LeitorComum}}
+\doxysubsubsection{\texorpdfstring{calcularMulta()}{calcularMulta()}}
+{\footnotesize\ttfamily int Leitor\+Comum\+::calcular\+Multa (\begin{DoxyParamCaption}\item[{int}]{dias\+Atraso }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calcula a multa para o leitor comum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dias\+Atraso} & Número de dias de atraso na devolução. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor da multa calculada. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLeitor_a59c5d76efc116c0759488440dd64eddc}{Leitor}}.
+
+\Hypertarget{classLeitorComum_a959fc98d2b947a9c1bd4393014c1d07c}\label{classLeitorComum_a959fc98d2b947a9c1bd4393014c1d07c} 
+\index{LeitorComum@{LeitorComum}!exibirInformacoes@{exibirInformacoes}}
+\index{exibirInformacoes@{exibirInformacoes}!LeitorComum@{LeitorComum}}
+\doxysubsubsection{\texorpdfstring{exibirInformacoes()}{exibirInformacoes()}}
+{\footnotesize\ttfamily void Leitor\+Comum\+::exibir\+Informacoes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Exibe informações do leitor comum. 
+
+
+
+Implements \mbox{\hyperlink{classLeitor_ad45a89efcf8f011481dee949902feb5a}{Leitor}}.
+
+\Hypertarget{classLeitorComum_add662e9d2c7cccc88fe42f6618af05f5}\label{classLeitorComum_add662e9d2c7cccc88fe42f6618af05f5} 
+\index{LeitorComum@{LeitorComum}!getPrazoEmprestimo@{getPrazoEmprestimo}}
+\index{getPrazoEmprestimo@{getPrazoEmprestimo}!LeitorComum@{LeitorComum}}
+\doxysubsubsection{\texorpdfstring{getPrazoEmprestimo()}{getPrazoEmprestimo()}}
+{\footnotesize\ttfamily int Leitor\+Comum\+::get\+Prazo\+Emprestimo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retorna o prazo máximo de empréstimo para o leitor comum. 
+
+\begin{DoxyReturn}{Returns}
+Prazo máximo em dias. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLeitor_aa2fe756f97fa1ef4f595bbfd155c8c91}{Leitor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Leitor\+Comum.\+h\end{DoxyCompactItemize}

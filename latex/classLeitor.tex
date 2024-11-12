@@ -1,0 +1,135 @@
+\doxysection{Leitor Class Reference}
+\hypertarget{classLeitor}{}\label{classLeitor}\index{Leitor@{Leitor}}
+
+
+Classe base abstrata para os leitores da biblioteca.  
+
+
+
+
+Inheritance diagram for Leitor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classLeitor__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLeitor_a4e7ee173bce2e57c1d4fdc1678afe924}{Leitor}} (const std\+::string \&\mbox{\hyperlink{classLeitor_ad6ef20420fd6ca11394bbbbe61cc8421}{nome}}, int \mbox{\hyperlink{classLeitor_a615f61cf3326cfe93442d8db41a1aad3}{idade}})
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{classLeitor}{Leitor}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLeitor_ad45a89efcf8f011481dee949902feb5a}{exibir\+Informacoes}} () const =0
+\begin{DoxyCompactList}\small\item\em Exibe informações do leitor. Método virtual puro a ser implementado nas subclasses. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classLeitor_a59c5d76efc116c0759488440dd64eddc}{calcular\+Multa}} (int dias\+Atraso) const =0
+\begin{DoxyCompactList}\small\item\em Calcula a multa para o leitor. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classLeitor_aa2fe756f97fa1ef4f595bbfd155c8c91}{get\+Prazo\+Emprestimo}} () const =0
+\begin{DoxyCompactList}\small\item\em Retorna o prazo máximo de empréstimo para o leitor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classLeitor_ad6ef20420fd6ca11394bbbbe61cc8421}{nome}}
+\item 
+int \mbox{\hyperlink{classLeitor_a615f61cf3326cfe93442d8db41a1aad3}{idade}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe base abstrata para os leitores da biblioteca. 
+
+A classe {\ttfamily \doxylink{classLeitor}{Leitor}} representa atributos comuns para leitores e define métodos virtuais para exibir informações e calcular multas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classLeitor_a4e7ee173bce2e57c1d4fdc1678afe924}\label{classLeitor_a4e7ee173bce2e57c1d4fdc1678afe924} 
+\index{Leitor@{Leitor}!Leitor@{Leitor}}
+\index{Leitor@{Leitor}!Leitor@{Leitor}}
+\doxysubsubsection{\texorpdfstring{Leitor()}{Leitor()}}
+{\footnotesize\ttfamily Leitor\+::\+Leitor (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{int}]{idade }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \doxylink{classLeitor}{Leitor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome do leitor. \\
+\hline
+{\em idade} & Idade do leitor. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLeitor_a59c5d76efc116c0759488440dd64eddc}\label{classLeitor_a59c5d76efc116c0759488440dd64eddc} 
+\index{Leitor@{Leitor}!calcularMulta@{calcularMulta}}
+\index{calcularMulta@{calcularMulta}!Leitor@{Leitor}}
+\doxysubsubsection{\texorpdfstring{calcularMulta()}{calcularMulta()}}
+{\footnotesize\ttfamily virtual int Leitor\+::calcular\+Multa (\begin{DoxyParamCaption}\item[{int}]{dias\+Atraso }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calcula a multa para o leitor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dias\+Atraso} & Número de dias de atraso na devolução. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor da multa calculada. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classLeitorComum_a6e7b47c94259ef386394240810394aa2}{Leitor\+Comum}}.
+
+\Hypertarget{classLeitor_ad45a89efcf8f011481dee949902feb5a}\label{classLeitor_ad45a89efcf8f011481dee949902feb5a} 
+\index{Leitor@{Leitor}!exibirInformacoes@{exibirInformacoes}}
+\index{exibirInformacoes@{exibirInformacoes}!Leitor@{Leitor}}
+\doxysubsubsection{\texorpdfstring{exibirInformacoes()}{exibirInformacoes()}}
+{\footnotesize\ttfamily virtual void Leitor\+::exibir\+Informacoes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Exibe informações do leitor. Método virtual puro a ser implementado nas subclasses. 
+
+
+
+Implemented in \mbox{\hyperlink{classLeitorComum_a959fc98d2b947a9c1bd4393014c1d07c}{Leitor\+Comum}}.
+
+\Hypertarget{classLeitor_aa2fe756f97fa1ef4f595bbfd155c8c91}\label{classLeitor_aa2fe756f97fa1ef4f595bbfd155c8c91} 
+\index{Leitor@{Leitor}!getPrazoEmprestimo@{getPrazoEmprestimo}}
+\index{getPrazoEmprestimo@{getPrazoEmprestimo}!Leitor@{Leitor}}
+\doxysubsubsection{\texorpdfstring{getPrazoEmprestimo()}{getPrazoEmprestimo()}}
+{\footnotesize\ttfamily virtual int Leitor\+::get\+Prazo\+Emprestimo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retorna o prazo máximo de empréstimo para o leitor. 
+
+\begin{DoxyReturn}{Returns}
+Prazo máximo em dias. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classLeitorComum_add662e9d2c7cccc88fe42f6618af05f5}{Leitor\+Comum}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classLeitor_a615f61cf3326cfe93442d8db41a1aad3}\label{classLeitor_a615f61cf3326cfe93442d8db41a1aad3} 
+\index{Leitor@{Leitor}!idade@{idade}}
+\index{idade@{idade}!Leitor@{Leitor}}
+\doxysubsubsection{\texorpdfstring{idade}{idade}}
+{\footnotesize\ttfamily int Leitor\+::idade\hspace{0.3cm}{\ttfamily [protected]}}
+
+Idade do leitor \Hypertarget{classLeitor_ad6ef20420fd6ca11394bbbbe61cc8421}\label{classLeitor_ad6ef20420fd6ca11394bbbbe61cc8421} 
+\index{Leitor@{Leitor}!nome@{nome}}
+\index{nome@{nome}!Leitor@{Leitor}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily std\+::string Leitor\+::nome\hspace{0.3cm}{\ttfamily [protected]}}
+
+Nome do leitor 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Leitor.\+cpp\end{DoxyCompactItemize}

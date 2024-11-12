@@ -1,0 +1,26 @@
+\doxysection{Leitor\+Comum.\+h}
+\hypertarget{LeitorComum_8h_source}{}\label{LeitorComum_8h_source}\index{src/LeitorComum.h@{src/LeitorComum.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LEITORCOMUM\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LEITORCOMUM\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../Leitor.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLeitorComum}{LeitorComum}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classLeitor}{Leitor}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classLeitorComum_a8b896b3f06d8496f707fe9484905864e}{LeitorComum}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classLeitor_ad6ef20420fd6ca11394bbbbe61cc8421}{nome}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classLeitor_a615f61cf3326cfe93442d8db41a1aad3}{idade}});}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLeitorComum_a959fc98d2b947a9c1bd4393014c1d07c}{exibirInformacoes}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classLeitorComum_a6e7b47c94259ef386394240810394aa2}{calcularMulta}}(\textcolor{keywordtype}{int}\ diasAtraso)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classLeitorComum_add662e9d2c7cccc88fe42f6618af05f5}{getPrazoEmprestimo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ PRAZO\_MAXIMO\ =\ 14;\ }
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LEITORCOMUM\_H}}
+
+\end{DoxyCode}
