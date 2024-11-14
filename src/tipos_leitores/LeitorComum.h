@@ -1,7 +1,7 @@
 #ifndef LEITORCOMUM_H
 #define LEITORCOMUM_H
 
-#include "Leitor.h"
+#include "../Leitor.h"
 
 /**
  * @class LeitorComum

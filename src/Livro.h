@@ -5,7 +5,7 @@
 
 /**
  * @class Livro
- * @brief Classe base abstrata para diferentes tipos de livros.
+ * @brief Classe base abstrata para tipos de livros.
  */
 class Livro {
 public:

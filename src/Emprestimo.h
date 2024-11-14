@@ -5,6 +5,10 @@
 #include "Leitor.h"
 #include <string>
 
+/**
+ * @class Emprestimo
+ * @brief Representa um empréstimo de um livro feito por um leitor.
+ */
 class Emprestimo {
 public:
     Emprestimo(Leitor* leitor, Livro* livro, const std::string& dataEmprestimo);

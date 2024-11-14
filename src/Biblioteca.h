@@ -9,6 +9,10 @@
 #include "Reserva.h"
 #include "Multa.h"
 
+/**
+ * @class Biblioteca
+ * @brief Gerencia as operações principais da biblioteca, como registro, empréstimo, e devolução de livros.
+ */
 class Biblioteca {
 public:
     void registrarLivro(Livro* livro);
@@ -23,7 +27,7 @@ public:
     void salvarDados();
     void carregarDados();
 
-    // Novas funções de busca
+    // Funções de busca
     Livro* buscarLivro(const std::string& titulo);
     Leitor* buscarLeitor(const std::string& nome);
     Emprestimo* buscarEmprestimo(const std::string& tituloLivro);

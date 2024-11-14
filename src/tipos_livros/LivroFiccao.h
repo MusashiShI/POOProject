@@ -1,7 +1,7 @@
 #ifndef LIVROFICCAO_H
 #define LIVROFICCAO_H
 
-#include "Livro.h"
+#include "../Livro.h"
 
 /**
  * @class LivroFiccao

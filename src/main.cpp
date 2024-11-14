@@ -3,8 +3,8 @@
 #include <chrono>
 #include <thread>
 #include "Biblioteca.h"
-#include "LivroFiccao.h"
-#include "LeitorComum.h"
+#include "tipos_livros/LivroFiccao.h"
+#include "tipos_leitores/LeitorComum.h"
 
 void limparTela() {
     // Limpa a tela no terminal
